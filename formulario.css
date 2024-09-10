@@ -1,104 +1,119 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* Cor de fundo leve e moderna */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.wrapper {
-    max-width: 500px;
-    width: 100%;
-    padding: 30px;
-    background-color: #ffffff;
-    border: 1px solid #dee2e6; /* Borda mais suave */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    box-sizing: border-box;
-}
-
-h1 {
-    margin: 0 0 20px;
-    font-size: 26px; /* Tamanho de fonte maior e mais legível */
-    color: #343a40; /* Cor escura para contraste */
-    text-align: center;
-}
-
-.input-box {
-    margin-bottom: 20px;
-}
-
-.input-box label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #495057; /* Cor suave para o texto */
-}
-
-.input-box input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ced4da; /* Borda padrão */
-    border-radius: 6px;
-    font-size: 16px; /* Tamanho de fonte padrão */
-    box-sizing: border-box;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.input-box input:focus {
-    border-color: #80bdff; /* Cor de foco azul claro */
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Sombra de foco */
-    outline: none;
-}
-
-.btn {
-    width: 100%;
-    padding: 14px;
-    background-color: #28a745; /* Verde vibrante */
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-    background-color: #218838; /* Verde escuro para hover */
-}
-
-.btn:active {
-    background-color: #1e7e34; /* Verde ainda mais escuro para clique */
-    transform: scale(0.98); /* Efeito de pressionado */
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    color: #007bff; /* Azul padrão para links */
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-    display: block;
-}
-
-a:hover {
-    text-decoration: underline; /* Sublinhado no hover para links */
-}
-
-/* Estilos responsivos */
-@media (max-width: 600px) {
-    .wrapper {
-        padding: 20px; /* Menos padding em telas menores */
-    }
-    h1 {
-        font-size: 22px; /* Reduzir o tamanho do título em telas pequenas */
-    }
-    .btn {
-        font-size: 16px; /* Reduzir o tamanho da fonte do botão */
-        padding: 12px; /* Ajustar o padding do botão */
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://example.com/student-image.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .wrapper {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h1 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #343a40;
+            text-align: center;
+        }
+        .input-box {
+            margin-bottom: 20px;
+        }
+        .input-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .input-box input:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .btn:active {
+            background-color: #1e7e34;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <h1>Formulario</h1>
+            <div class="input-box">
+                <label for="projetor">Projetor:</label>
+                <input type="text" id="projetor" name="projetor" placeholder="Detalhes do projetor" required>
+            </div>
+            <div class="input-box">
+                <label for="mesas">Mesas:</label>
+                <input type="number" id="mesas" name="mesas" placeholder="Quantidade de mesas" required>
+            </div>
+            <div class="input-box">
+                <label for="cadeiras">Cadeiras:</label>
+                <input type="number" id="cadeiras" name="cadeiras" placeholder="Quantidade de cadeiras" required>
+            </div>
+            <div class="input-box">
+                <label for="pc">PC:</label>
+                <input type="number" id="pc" name="pc" placeholder="Quantidade de PCs" required>
+            </div>
+            <div class="input-box">
+                <label for="ar-condicionado">Ar condicionado:</label>
+                <input type="text" id="ar-condicionado" name="ar-condicionado" placeholder="Detalhes do ar condicionado" required>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+            <a href="../index.html">Voltar</a>
+        </form>
+    </div>
+    <script src="../src/formulario.js"></script>
+</body>
+</html>
