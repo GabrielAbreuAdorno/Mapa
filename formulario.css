@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: url('https://example.com/student-image.jpg') no-repeat center center fixed; 
             background-size: cover;
-            margin: 0;
+            margin: 10;
             padding: 0;
             display: flex;
             justify-content: center;
