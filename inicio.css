@@ -17,7 +17,7 @@ body {
 .banner {
     width: flex;
     height: 250px;
-    background: url(facul.png) no-repeat center center;
+    background: url(imagens/logo.png) no-repeat center center;
     background-size: cover
 }
 
