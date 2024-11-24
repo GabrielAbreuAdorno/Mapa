@@ -1,38 +1,70 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <link href="inicio.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mapa interativo da Faculdade UniMetrocamp, explore o mapa do Subsolo 01.">
     <title>UniMetrocamp - Subsolo 01</title>
-    <style>
-    </style>
+    <link href="inicio.css" rel="stylesheet">
 </head>
 <body>
-    <div class="menu">
-        <a href="inicio.html"><img src="imagens/logo.png"></a>
-    </div>
+    <!-- Menu de navegação -->
+    <header class="menu">
+        <nav>
+            <a href="index.html" aria-label="Página inicial">
+                <img src="logo.svg" alt="Logo da UniMetrocamp">
+            </a>
+            <!-- Botões de navegação -->
+            <a href="sobrenos.html" class="botao" title="Sobre Nós">Sobre Nós</a>
+            <a href="formulario.html" class="botao" title="Entrar em contato com o coordenador">Entrar em contato com o coordenador</a>
+        </nav>
+    </header>
+
+    <!-- Banner com imagem de fundo -->
+    <section class="banner">
+        <div class="banner-overlay">
+            <!-- O banner pode ter um texto ou call to action -->
         </div>
-    <div class="banner"></div>
-    <div class="conteúdo">
-        <div class="bloco">
-            <p class="info-titulo">Subsolo 01</p>
-            <p class="info-descri">Abaixo estará o mapa com todas as salas deste andar.</p>
-        </div>
-        <br>
-        <div class="bloco">
-            <img class="mapa" src="imagens/Mapa-S1.jpeg">
-        </div>
-        <br>
-         <div class="bloco">
+    </section>
+
+    <!-- Conteúdo principal -->
+    <main class="conteúdo">
+        <!-- Bloco de introdução -->
+        
+            <h1 class="info-titulo">Mapa do Subsolo 1</h1>
+            <p class="info-descri">Mapa do Subsolo 1. Abaixo estão os links para acessar os outros andares da faculdade.</p>
+            <section class="mapa-scroll">
+        <img src="imagens/Mapa-S1.jpeg" alt="Mapa">
+        </section>
+
+        <!-- Bloco de links para outros andares -->
+        <section class="bloco">
             <div class="colunas">
-                <div class="andar"><a href="mezanino.html">Mezanino</a></div>
-                <div class="andar"><a href="subsolo2.html">Subsolo 02</a></div>
-                <div class="andar"><a href="formulario.html">Formulário</a></div>
+                <!-- Botões para os outros andares -->
+                <div class="andar">
+                    <a href="subsolo2.html" title="Mapa do Subsolo 02">Subsolo 02</a>
+                </div>
+                <div class="andar">
+                    <a href="subsolo3.html" title="Mapa do Subsolo 03">Subsolo 03</a>
+                </div>
+                <div class="andar">
+                    <a href="subsolo4.html" title="Mapa do Subsolo 04">Subsolo 04</a>
+                </div>
             </div>
-          </div>
-        <div class="bloco">
-            <p class="info-titulo">QRCode</p>
-            <img class="QRCode" src="QRCode-S1.png">
+        </section>
+
+        <div class="QRCode">
+            <img src="QRCodes/QRCode-S1.png" alt="QR Code">
         </div>
-    </div>
+
+        <!-- Botão para voltar para a tela inicial -->
+        <section class="bloco-voltar">
+            <div class="botao-voltar">
+                <a href="index.html" class="botao" title="Voltar para a tela inicial">Voltar para a Tela Inicial</a>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
