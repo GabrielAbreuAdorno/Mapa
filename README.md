@@ -9,7 +9,7 @@
 Nossa ideia é tornar mais rápido a localização das salas, além de visar melhorar o mapa da universidade
 #
 # Linguagens ultilizadas
-HTML e CSS
+Html, css, javascript, json e php
 
 # Autores 
 - Gabriel Abreu 
