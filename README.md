@@ -20,4 +20,3 @@ HTML e CSS
 Link para o sala de aula virtual wyden: https://estudante.wyden.com.br/login
 
 
-# !Site ainda está em desenvolvimento!
