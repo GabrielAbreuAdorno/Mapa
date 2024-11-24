@@ -28,7 +28,7 @@ header {
 /* Corpo da página */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('imagens/fundofinal.jpg'); /* Imagem de fundo */
+    background-image: url('Faculdade.jpg'); /* Imagem de fundo */
     background-attachment: fixed; /* Imagem de fundo fixa durante o scroll */
     background-size: cover; /* A imagem cobre toda a tela */
     background-position: center center; /* Centraliza a imagem */
