@@ -43,7 +43,7 @@ header {
 
 .botao {
     background-color: rgb(73, 9, 52); /* Cor de fundo */
-    color: white;                     /* Cor do texto */
+    color: black;                     /* Cor do texto */
     padding: 10px 20px;               /* Espaçamento interno */
     text-decoration: none;            /* Remove sublinhado */
     border-radius: 5px;               /* Bordas arredondadas */
