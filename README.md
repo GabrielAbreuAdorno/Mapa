@@ -12,9 +12,10 @@ Nossa ideia é tornar mais rápido a localização das salas, além de visar mel
 Html, css, e php
 
 # Autores 
+- Juan Azevedo 
 - Gabriel Abreu 
-- Antônio Josiel 
-- Rafael Santana 
-- Juan Azevedo
+- Rafael Santana
+- Antônio Josiel  
+  
 #
 Link para o sala de aula virtual wyden: https://estudante.wyden.com.br/login
